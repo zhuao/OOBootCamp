@@ -13,3 +13,15 @@ THEN 4 available
 GIVEN 3 available slots
 WHEN unpark 1
 THEN Exception
+
+
+
+GIVEN 3 available slots
+WHEN unpark 1
+THEN Exception
+
+
+
+GIVEN 3 available slots
+WHEN unpark 1
+THEN Exception

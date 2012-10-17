@@ -52,7 +52,7 @@ public class ParkTest {
     }
 
     @Test
-    public void should_return_3_available_slots_when_unpark_successful_and_parking_lot_has_2_available_slots() {
+    public void should_return_3_available_slots_when_unpark_successful_and_parking_slot_has_2_available_slots() {
         int availableSlots = 2;
         ParkingLot parkingLot = new ParkingLot(availableSlots);
 
@@ -63,7 +63,7 @@ public class ParkTest {
     }
 
     @Test
-    public void should_return_exception_when_fail_unpark_and_all_parking_lot_are_available_slots() {
+    public void should_return_exception_when_fail_unpark_and_all_parking_slot_are_available_slots() {
         int availableSlots = 0;
         ParkingLot parkingLot = new ParkingLot(availableSlots);
 
