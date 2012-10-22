@@ -1,23 +1,38 @@
 package com.tw.bootcamp;
 
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 public class ParkingBoy {
 
-    private final ParkingLot parkingLot;
+    protected List<ParkingLot> parkingLots;
 
-    public ParkingBoy(ParkingLot parkingLot) {
-        this.parkingLot = parkingLot;
+    public ParkingBoy(ParkingLot parkingLot, ParkingLot... parkingLotArray) {
+        parkingLots = new LinkedList<ParkingLot>();
+        parkingLots.add(parkingLot);
+        parkingLots.addAll(Arrays.asList(parkingLotArray));
     }
 
     public Ticket park(Car car) {
-        Ticket ticket = null;
+        Ticket ticket = new NullTicket();
         try{
-            parkingLot.receive(1);
+            getAvailableParkingLot().receive(1);
             ticket = new Ticket();
             ticket.setCarNo(car.getCarNo());
         }catch (RuntimeException e) {
         }
         return ticket;
     }
+
+    protected ParkingLot getAvailableParkingLot() {
+        for (ParkingLot parkingLot : parkingLots) {
+            if (parkingLot.getAvailableSlots() > 0) {
+                return parkingLot;
+            }
+        }
+        throw new RuntimeException("no parking lot");
+    }
+
 }

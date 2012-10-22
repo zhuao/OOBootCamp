@@ -29,6 +29,71 @@ public class ParkingBoyTest {
         Car car = new Car(expectedCarNo);
         Ticket ticket = parkingBoy.park(car);
 
-        Assert.assertNull(ticket);
+        Assert.assertTrue(ticket.isNUll());
     }
+
+    @Test
+    public void should_return_ticket_when_park_successfully_in_his_first_parking_lot() {
+        ParkingLot firstParkingLot = new ParkingLot(3);
+        ParkingLot secondParkingLot = new ParkingLot(3);
+        ParkingBoy parkingBoy = new ParkingBoy(firstParkingLot, secondParkingLot);
+
+        String expectedCarNo = "1215";
+        Car car = new Car(expectedCarNo);
+        Ticket ticket = parkingBoy.park(car);
+
+        Assert.assertFalse(ticket.isNUll());
+        Assert.assertEquals(expectedCarNo, ticket.getCarNo());
+        Assert.assertEquals(2, firstParkingLot.getAvailableSlots());
+        Assert.assertEquals(3, secondParkingLot.getAvailableSlots());
+    }
+
+    @Test
+    public void should_return_ticket_when_park_successfully_in_second_parking_lot() {
+        ParkingLot firstParkingLot = new ParkingLot(0);
+        ParkingLot secondParkingLot = new ParkingLot(3);
+        ParkingLot thirdParkingLot = new ParkingLot(4);
+        ParkingBoy parkingBoy = new ParkingBoy(firstParkingLot, secondParkingLot, thirdParkingLot);
+
+        String expectedCarNo = "1215";
+        Car car = new Car(expectedCarNo);
+        Ticket ticket = parkingBoy.park(car);
+
+        Assert.assertFalse(ticket.isNUll());
+        Assert.assertEquals(expectedCarNo, ticket.getCarNo());
+        Assert.assertEquals(0, firstParkingLot.getAvailableSlots());
+        Assert.assertEquals(2, secondParkingLot.getAvailableSlots());
+        Assert.assertEquals(4, thirdParkingLot.getAvailableSlots());
+    }
+
+    @Test
+    public void should_return_ticket_when_park_successfully_in_his_second_parking_lot() {
+        ParkingLot firstParkingLot = new ParkingLot(0);
+        ParkingLot secondParkingLot = new ParkingLot(3);
+        ParkingBoy parkingBoy = new ParkingBoy(firstParkingLot, secondParkingLot);
+
+        String expectedCarNo = "1215";
+        Car car = new Car(expectedCarNo);
+        Ticket ticket = parkingBoy.park(car);
+
+        Assert.assertFalse(ticket.isNUll());
+        Assert.assertEquals(expectedCarNo, ticket.getCarNo());
+        Assert.assertEquals(0, firstParkingLot.getAvailableSlots());
+        Assert.assertEquals(2, secondParkingLot.getAvailableSlots());
+    }
+
+    @Test
+    public void should_not_return_ticket_when_no_parking_lots_in_his_all_parking_lots() {
+        ParkingLot firstParkingLot = new ParkingLot(0);
+        ParkingLot secondParkingLot = new ParkingLot(0);
+        ParkingBoy parkingBoy = new ParkingBoy(firstParkingLot, secondParkingLot);
+
+        String expectedCarNo = "1215";
+        Car car = new Car(expectedCarNo);
+        Ticket ticket = parkingBoy.park(car);
+
+        Assert.assertTrue(ticket.isNUll());
+    }
+
+
 }

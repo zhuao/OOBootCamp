@@ -11,4 +11,8 @@ public class Ticket {
     public void setCarNo(String carNo) {
         this.carNo = carNo;
     }
+
+    public boolean isNUll() {
+        return false;
+    }
 }

@@ -31,4 +31,8 @@ public class ParkingLot {
         availableSlots = availableSlots + carCount;
         return availableSlots;
     }
+
+    public int getAvailableSlots() {
+        return availableSlots;
+    }
 }
