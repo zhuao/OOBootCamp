@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ParkingBoy {
+public class ParkingBoy  extends AbstractParkingBoy{
 
-    protected List<ParkingLot> parkingLots;
+    private List<ParkingLot> parkingLots;
 
     public ParkingBoy(ParkingLot parkingLot, ParkingLot... parkingLotArray) {
         parkingLots = new LinkedList<ParkingLot>();
@@ -15,17 +15,12 @@ public class ParkingBoy {
         parkingLots.addAll(Arrays.asList(parkingLotArray));
     }
 
-    public Ticket park(Car car) {
-        Ticket ticket = new NullTicket();
-        try{
-            getAvailableParkingLot().receive(1);
-            ticket = new Ticket();
-            ticket.setCarNo(car.getCarNo());
-        }catch (RuntimeException e) {
-        }
-        return ticket;
+    @Override
+    protected List<ParkingLot> getParkingLots() {
+        return parkingLots;
     }
 
+    @Override
     protected ParkingLot getAvailableParkingLot() {
         for (ParkingLot parkingLot : parkingLots) {
             if (parkingLot.getAvailableSlots() > 0) {

@@ -12,7 +12,7 @@ public class Ticket {
         this.carNo = carNo;
     }
 
-    public boolean isNUll() {
-        return false;
+    public boolean isAvailable() {
+        return true;
     }
 }

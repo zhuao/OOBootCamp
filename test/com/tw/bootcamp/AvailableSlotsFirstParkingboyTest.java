@@ -7,46 +7,46 @@ public class AvailableSlotsFirstParkingBoyTest {
 
     @Test
     public void should_park_successful_when_two_parking_lots_has_same_available_slots() {
-        ParkingLot firstParkingLot = new ParkingLot(3);
-        ParkingLot secondParkingLot = new ParkingLot(3);
-        ParkingBoy parkingBoy = new AvailableSlotsFirstParkingBoy(firstParkingLot, secondParkingLot);
+        ParkingLot firstParkingLot = new ParkingLot(10, 3);
+        ParkingLot secondParkingLot = new ParkingLot(10, 3);
+        AvailableSlotsFirstParkingBoy parkingBoy = new AvailableSlotsFirstParkingBoy(firstParkingLot, secondParkingLot);
         int totalAvailableSlots = getCurrentTotalAvailableSlot(firstParkingLot, secondParkingLot);
 
         String expectedCarNo = "1215";
         Car car = new Car(expectedCarNo);
         Ticket ticket = parkingBoy.park(car);
 
-        Assert.assertFalse(ticket.isNUll());
+        Assert.assertTrue(ticket.isAvailable());
         int actualAvailableSlots = getCurrentTotalAvailableSlot(firstParkingLot, secondParkingLot);
         Assert.assertEquals(totalAvailableSlots - 1, actualAvailableSlots);
     }
 
     @Test
     public void should_park_in_more_available_slots_when_two_parking_lots_has_different_available_slot() {
-        ParkingLot firstParkingLot = new ParkingLot(3);
-        ParkingLot secondParkingLot = new ParkingLot(5);
-        ParkingBoy parkingBoy = new AvailableSlotsFirstParkingBoy(firstParkingLot, secondParkingLot);
+        ParkingLot firstParkingLot = new ParkingLot(10, 3);
+        ParkingLot secondParkingLot = new ParkingLot(10, 5);
+        AvailableSlotsFirstParkingBoy parkingBoy = new AvailableSlotsFirstParkingBoy(firstParkingLot, secondParkingLot);
 
         String expectedCarNo = "1215";
         Car car = new Car(expectedCarNo);
         Ticket ticket = parkingBoy.park(car);
 
-        Assert.assertFalse(ticket.isNUll());
+        Assert.assertTrue(ticket.isAvailable());
         Assert.assertEquals(4, secondParkingLot.getAvailableSlots());
         Assert.assertEquals(3, firstParkingLot.getAvailableSlots());
     }
 
     @Test
     public void should_fail_to_park_when_two_parking_lots_has_no_available_slot() {
-        ParkingLot firstParkingLot = new ParkingLot(0);
-        ParkingLot secondParkingLot = new ParkingLot(0);
-        ParkingBoy parkingBoy = new AvailableSlotsFirstParkingBoy(firstParkingLot, secondParkingLot);
+        ParkingLot firstParkingLot = new ParkingLot(10, 0);
+        ParkingLot secondParkingLot = new ParkingLot(10, 0);
+        AvailableSlotsFirstParkingBoy parkingBoy = new AvailableSlotsFirstParkingBoy(firstParkingLot, secondParkingLot);
 
         String expectedCarNo = "1215";
         Car car = new Car(expectedCarNo);
         Ticket ticket = parkingBoy.park(car);
 
-        Assert.assertTrue(ticket.isNUll());
+        Assert.assertFalse(ticket.isAvailable());
     }
 
     private int getCurrentTotalAvailableSlot(ParkingLot... parkingLots) {

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="OOBootCamp" basedir="./">
+
+    <property name="java_encoding" value="UTF-8"/>
+    <property environment="env"/>
+    <property file="project.properties"/>
+
+    <path id="test.classpath">
+        <fileset dir="lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="init">
+        <mkdir dir="${classes.dir}"/>
+        <mkdir dir="${reports.xml.dir}"/>
+        <mkdir dir="${reports.html.dir}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac encoding="${java_encoding}" srcdir="${src.dir}" destdir="${classes.dir}" debug="yes">
+        </javac>
+        <javac encoding="${java_encoding}" srcdir="${tested.project.dir}/test/" destdir="${classes.dir}" debug="yes">
+            <classpath refid="test.classpath"/>
+        </javac>
+    </target>
+
+    <target name="unit-test" depends="clean, init, compile">
+        <junit fork="yes" dir="." failureProperty="test.failed" haltonerror="true" haltonfailure="true"
+               printsummary="yes" forkmode="perBatch"
+               showoutput="no">
+            <classpath>
+                <pathelement path="${tested.project.dir}/test"/>
+            </classpath>
+            <classpath location="${classes.dir}"/>
+            <classpath refid="test.classpath"/>
+
+            <formatter type="brief" usefile="false"/>
+
+            <formatter type="xml"/>
+            <batchtest todir="${reports.xml.dir}">
+                <fileset dir="${tested.project.dir}/test/">
+                    <include name="**/*Test.java"/>
+                    <exclude name="**/AllTests.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+
+        <junitreport todir="${reports.xml.dir}">
+            <fileset dir="${reports.xml.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${reports.html.dir}"/>
+        </junitreport>
+    </target>
+
+    <target name="clean">
+        <delete dir="${classes.dir}"/>
+        <delete dir="${reports.xml.dir}"/>
+        <delete dir="${reports.html.dir}"/>
+    </target>
+</project>
