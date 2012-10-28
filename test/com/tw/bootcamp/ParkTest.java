@@ -10,9 +10,9 @@ public class ParkTest {
         int availableSlots = 3;
         ParkingLot parkingLot = new ParkingLot(10, availableSlots);
 
-        int availableCount = parkingLot.receive(1);
+        parkingLot.park(new Car("12345"));
 
-        Assert.assertEquals(2, availableCount);
+        Assert.assertEquals(2, parkingLot.getAvailableSlots());
 
     }
 
@@ -21,9 +21,9 @@ public class ParkTest {
         int availableSlots = 4;
         ParkingLot parkingLot = new ParkingLot(10, availableSlots);
 
-        int availableCount = parkingLot.receive(1);
+        parkingLot.park(new Car("12345"));
 
-        Assert.assertEquals(3, availableCount);
+        Assert.assertEquals(3, parkingLot.getAvailableSlots());
 
     }
 
@@ -32,12 +32,9 @@ public class ParkTest {
         int availableSlots = 0;
         ParkingLot parkingLot = new ParkingLot(10, availableSlots);
 
-        try {
-            parkingLot.receive(1);
-            Assert.fail();
-        } catch (RuntimeException e) {
-            Assert.assertEquals("have no available parking lot!", e.getMessage());
-        }
+        Ticket ticket = parkingLot.park(new Car("12345"));
+
+        Assert.assertFalse(ticket.isAvailable());
     }
 
     @Test
@@ -45,9 +42,9 @@ public class ParkTest {
         int availableSlots = 3;
         ParkingLot parkingLot = new ParkingLot(10, availableSlots);
 
-        int availableCount = parkingLot.send(1);
+        parkingLot.send(1);
 
-        Assert.assertEquals(4, availableCount);
+        Assert.assertEquals(4, parkingLot.getAvailableSlots());
 
     }
 
@@ -56,9 +53,9 @@ public class ParkTest {
         int availableSlots = 2;
         ParkingLot parkingLot = new ParkingLot(10, availableSlots);
 
-        int availableCount = parkingLot.send(1);
+        parkingLot.send(1);
 
-        Assert.assertEquals(3, availableCount);
+        Assert.assertEquals(3, parkingLot.getAvailableSlots());
 
     }
 

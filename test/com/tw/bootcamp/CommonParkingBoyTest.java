@@ -4,16 +4,16 @@ import junit.framework.Assert;
 import org.junit.Test;
 
 
-public class ParkingBoyTest {
+public class CommonParkingBoyTest {
 
     @Test
     public void should_return_ticket_when_park_successful_in_his_parking_lot() {
         ParkingLot parkingLot = new ParkingLot(10, 3);
-        ParkingBoy parkingBoy = new ParkingBoy(parkingLot);
+        IParkable commonParkingBoy = ParkingBoy.createCommonParkingBoy(parkingLot);
 
         String expectedCarNo = "1215";
         Car car = new Car(expectedCarNo);
-        Ticket ticket = parkingBoy.park(car);
+        Ticket ticket = commonParkingBoy.park(car);
 
         Assert.assertNotNull(ticket);
         Assert.assertEquals(expectedCarNo, ticket.getCarNo());
@@ -23,11 +23,11 @@ public class ParkingBoyTest {
     @Test
     public void should_not_return_ticket_when_fail_park_in_his_parking_lot() {
         ParkingLot parkingLot = new ParkingLot(10, 0);
-        ParkingBoy parkingBoy = new ParkingBoy(parkingLot);
+        IParkable commonParkingBoy = ParkingBoy.createCommonParkingBoy(parkingLot);
 
         String expectedCarNo = "1215";
         Car car = new Car(expectedCarNo);
-        Ticket ticket = parkingBoy.park(car);
+        Ticket ticket = commonParkingBoy.park(car);
 
         Assert.assertFalse(ticket.isAvailable());
     }
@@ -36,11 +36,11 @@ public class ParkingBoyTest {
     public void should_return_ticket_when_park_successfully_in_his_first_parking_lot() {
         ParkingLot firstParkingLot = new ParkingLot(10, 3);
         ParkingLot secondParkingLot = new ParkingLot(10, 3);
-        ParkingBoy parkingBoy = new ParkingBoy(firstParkingLot, secondParkingLot);
+        IParkable commonParkingBoy = ParkingBoy.createCommonParkingBoy(firstParkingLot, secondParkingLot);
 
         String expectedCarNo = "1215";
         Car car = new Car(expectedCarNo);
-        Ticket ticket = parkingBoy.park(car);
+        Ticket ticket = commonParkingBoy.park(car);
 
         Assert.assertTrue(ticket.isAvailable());
         Assert.assertEquals(expectedCarNo, ticket.getCarNo());
@@ -53,11 +53,11 @@ public class ParkingBoyTest {
         ParkingLot firstParkingLot = new ParkingLot(10, 0);
         ParkingLot secondParkingLot = new ParkingLot(10, 3);
         ParkingLot thirdParkingLot = new ParkingLot(10, 4);
-        ParkingBoy parkingBoy = new ParkingBoy(firstParkingLot, secondParkingLot, thirdParkingLot);
+        IParkable commonParkingBoy = ParkingBoy.createCommonParkingBoy(firstParkingLot, secondParkingLot, thirdParkingLot);
 
         String expectedCarNo = "1215";
         Car car = new Car(expectedCarNo);
-        Ticket ticket = parkingBoy.park(car);
+        Ticket ticket = commonParkingBoy.park(car);
 
         Assert.assertTrue(ticket.isAvailable());
         Assert.assertEquals(expectedCarNo, ticket.getCarNo());
@@ -70,11 +70,11 @@ public class ParkingBoyTest {
     public void should_return_ticket_when_park_successfully_in_his_second_parking_lot() {
         ParkingLot firstParkingLot = new ParkingLot(10, 0);
         ParkingLot secondParkingLot = new ParkingLot(10, 3);
-        ParkingBoy parkingBoy = new ParkingBoy(firstParkingLot, secondParkingLot);
+        IParkable commonParkingBoy = ParkingBoy.createCommonParkingBoy(firstParkingLot, secondParkingLot);
 
         String expectedCarNo = "1215";
         Car car = new Car(expectedCarNo);
-        Ticket ticket = parkingBoy.park(car);
+        Ticket ticket = commonParkingBoy.park(car);
 
         Assert.assertTrue(ticket.isAvailable());
         Assert.assertEquals(expectedCarNo, ticket.getCarNo());
@@ -86,11 +86,11 @@ public class ParkingBoyTest {
     public void should_not_return_ticket_when_no_parking_lots_in_his_all_parking_lots() {
         ParkingLot firstParkingLot = new ParkingLot(10, 0);
         ParkingLot secondParkingLot = new ParkingLot(10, 0);
-        ParkingBoy parkingBoy = new ParkingBoy(firstParkingLot, secondParkingLot);
+        IParkable commonParkingBoy = ParkingBoy.createCommonParkingBoy(firstParkingLot, secondParkingLot);
 
         String expectedCarNo = "1215";
         Car car = new Car(expectedCarNo);
-        Ticket ticket = parkingBoy.park(car);
+        Ticket ticket = commonParkingBoy.park(car);
 
         Assert.assertFalse(ticket.isAvailable());
     }

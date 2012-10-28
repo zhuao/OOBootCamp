@@ -1,6 +1,6 @@
 package com.tw.bootcamp;
 
-public class ParkingLot {
+public class ParkingLot implements IParkable{
 
     private int availableSlots;
     private int amount;
@@ -14,12 +14,16 @@ public class ParkingLot {
         this.availableSlots = availableSlots;
     }
 
-    public int receive(int carCount) {
-        availableSlots = availableSlots - carCount;
+    @Override
+    public Ticket park(Car car) {
+        Ticket ticket;
+        availableSlots --;
+        ticket = new Ticket();
+        ticket.setCarNo(car.getCarNo());
         if (availableSlots < 0) {
-            throw new RuntimeException("have no available parking lot!");
+            ticket = new NullTicket();
         }
-        return  availableSlots;
+        return ticket;
     }
 
     public int send(int carCount) {

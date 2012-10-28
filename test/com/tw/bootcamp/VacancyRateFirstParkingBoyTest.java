@@ -9,7 +9,7 @@ public class VacancyRateFirstParkingBoyTest {
     public void should_park_successful_when_two_parking_lots_has_same_vacancy_rate() {
         ParkingLot firstParkingLot = new ParkingLot(12, 3);
         ParkingLot secondParkingLot = new ParkingLot(12, 3);
-        VacancyRateFirstParkingBoy parkingBoy = new VacancyRateFirstParkingBoy(firstParkingLot, secondParkingLot);
+        IParkable parkingBoy = ParkingBoy.createVacancyRateFirstParkingBoy(firstParkingLot, secondParkingLot);
 
         String expectedCarNo = "1215";
         Car car = new Car(expectedCarNo);
@@ -22,7 +22,7 @@ public class VacancyRateFirstParkingBoyTest {
     public void should_park_in_high_vacancy_rate_parking_lot_when_two_parking_lots_has_different_vacancy_rate() {
         ParkingLot firstParkingLot = new ParkingLot(15, 3);
         ParkingLot secondParkingLot = new ParkingLot(12, 3);
-        VacancyRateFirstParkingBoy parkingBoy = new VacancyRateFirstParkingBoy(firstParkingLot, secondParkingLot);
+        IParkable parkingBoy = ParkingBoy.createVacancyRateFirstParkingBoy(firstParkingLot, secondParkingLot);
 
         String expectedCarNo = "1215";
         Car car = new Car(expectedCarNo);
@@ -37,7 +37,7 @@ public class VacancyRateFirstParkingBoyTest {
     public void should_fail_to_park_when_there_are_no_available_slots() {
         ParkingLot firstParkingLot = new ParkingLot(10, 0);
         ParkingLot secondParkingLot = new ParkingLot(10, 0);
-        AvailableSlotsFirstParkingBoy parkingBoy = new AvailableSlotsFirstParkingBoy(firstParkingLot, secondParkingLot);
+        IParkable parkingBoy = ParkingBoy.createAvailableSlotsFirstParkingBoy(firstParkingLot, secondParkingLot);
 
         String expectedCarNo = "1215";
         Car car = new Car(expectedCarNo);
