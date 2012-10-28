@@ -1,4 +1,4 @@
-package com.tw.bootcamp;
+package com.tw.bootcamp.domain;
 
 public class Ticket {
 

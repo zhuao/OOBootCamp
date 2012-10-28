@@ -1,12 +1,14 @@
 package com.tw.bootcamp;
 
+import com.tw.bootcamp.domain.Car;
+import com.tw.bootcamp.domain.Ticket;
 import junit.framework.Assert;
 import org.junit.Test;
 
 public class ParkingManagerTest {
 
     @Test
-    public void should_parking_successfully_when_parking_manager_has_a_parking_lot_and_has_no_parking_boy() {
+    public void should_parking_successfully_when_parking_manager_has_one_parking_lot_and_has_no_parking_boy() {
         ParkingLot parkingLot = new ParkingLot(10, 5);
         ParkingManager parkingManager = ParkingBoy.createParkingManager(parkingLot);
 
@@ -21,11 +23,9 @@ public class ParkingManagerTest {
     @Test
     public void should_parking_twice_successfully_when_parking_manager_has_one_parking_lot_and_one_parking_boy() {
         ParkingLot parkingLot = new ParkingLot(10, 1);
-        ParkingManager parkingManager = ParkingBoy.createParkingManager(parkingLot);
-
         ParkingLot boyParkingLot = new ParkingLot(20,1);
         IParkable commonParkingBoy = ParkingBoy.createCommonParkingBoy(boyParkingLot);
-        parkingManager.addManagedParkingBoy(commonParkingBoy);
+        ParkingManager parkingManager = ParkingBoy.createParkingManager(parkingLot, commonParkingBoy);
 
         String expectedCarNo = "1215";
         Car firstCar = new Car(expectedCarNo);
@@ -42,15 +42,13 @@ public class ParkingManagerTest {
     @Test
     public void should_parking_three_times_successfully_when_parking_manager_has_one_parking_lot_and_two_parking_boy() {
         ParkingLot parkingLot = new ParkingLot(10, 1);
-        ParkingManager parkingManager = ParkingBoy.createParkingManager(parkingLot);
 
         ParkingLot firstParkingLot = new ParkingLot(20,1);
         IParkable commonParkingBoy = ParkingBoy.createCommonParkingBoy(firstParkingLot);
-        parkingManager.addManagedParkingBoy(commonParkingBoy);
 
         ParkingLot secondParkingLot = new ParkingLot(20,1);
         IParkable secondCommonParkingBoy = ParkingBoy.createCommonParkingBoy(secondParkingLot);
-        parkingManager.addManagedParkingBoy(secondCommonParkingBoy);
+        ParkingManager parkingManager = ParkingBoy.createParkingManager(parkingLot, commonParkingBoy, secondCommonParkingBoy);
 
         String expectedCarNo = "1215";
         Car firstCar = new Car(expectedCarNo);
@@ -67,28 +65,25 @@ public class ParkingManagerTest {
 
     }
 
-//    @Test
-//    public void should_print_all_parking_lots_when_it_has_2_parking_boy() {
-//
-//        ParkingLot parkingLot = new ParkingLot(10, 1);
-//        ParkingManager parkingManager = new ParkingManager(parkingLot);
-//        parkingManager.setName("zhangsan");
-//
-//        ParkingLot firstParkingLot = new ParkingLot(20,1);
-//        CommonParkingBoy parkingBoy = new CommonParkingBoy(firstParkingLot);
-//        parkingBoy.setName("lisi");
-//        parkingManager.addManagedParkingBoy(parkingBoy);
-//
-//        ParkingLot secondParkingLot = new ParkingLot(20,1);
-//        CommonParkingBoy secondParkingBoy = new CommonParkingBoy(secondParkingLot);
-//        secondParkingBoy.setName("wangwu");
-//        parkingManager.addManagedParkingBoy(secondParkingBoy);
-//
-//        String tree = parkingManager.print();
-//
-//        System.out.println(tree);
-//
-//        Assert.assertEquals("ParkingManager:zhangsan\n  CommonParkingBoy:lisi\n    ParkingLot:1\n  CommonParkingBoy:wangwu\n    ParkingLot:1", tree);
-//
-//    }
+    @Test
+    public void should_print_all_parking_lots_when_it_has_2_parking_boy() {
+
+        ParkingLot parkingLot = new ParkingLot(10, 1);
+        ParkingLot firstParkingLot = new ParkingLot(20,1);
+        ParkingBoy parkingBoy = ParkingBoy.createCommonParkingBoy(firstParkingLot);
+        parkingBoy.setName("lisi");
+        ParkingLot secondParkingLot = new ParkingLot(20,1);
+        ParkingBoy secondParkingBoy = ParkingBoy.createCommonParkingBoy(secondParkingLot);
+        secondParkingBoy.setName("wangwu");
+
+        ParkingManager parkingManager = ParkingBoy.createParkingManager(parkingLot, parkingBoy, secondParkingBoy);
+        parkingManager.setName("zhangsan");
+
+
+        String tree = parkingManager.report(0);
+
+        System.out.println(tree);
+        Assert.assertEquals("ParkingManager:zhangsan\n  ParkingLot:1\n  CommonParkingBoy:lisi\n    ParkingLot:1\n  CommonParkingBoy:wangwu\n    ParkingLot:1\n", tree);
+
+    }
 }

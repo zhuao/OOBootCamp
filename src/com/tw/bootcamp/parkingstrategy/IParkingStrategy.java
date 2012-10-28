@@ -8,4 +8,6 @@ import java.util.List;
 public interface IParkingStrategy {
 
     public ParkingLot getAvailableParkingLot(List<ParkingLot> parkingLots);
+
+
 }

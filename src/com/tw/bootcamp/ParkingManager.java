@@ -1,32 +1,24 @@
 package com.tw.bootcamp;
 
-import com.tw.bootcamp.parkingstrategy.ParkingStrategy;
-
-import java.util.LinkedList;
-import java.util.List;
+import com.tw.bootcamp.domain.Car;
+import com.tw.bootcamp.domain.NullTicket;
+import com.tw.bootcamp.domain.Ticket;
 
 public class ParkingManager extends ParkingBoy {
-    private List<IParkable> parkingBoyes = new LinkedList<IParkable>();
 
-    public ParkingManager(ParkingLot parkingLot, ParkingLot... parkingLots) {
-        super(parkingLot, parkingLots);
-        super.setParkingStrategy(new ParkingStrategy());
-    }
 
-    public void addManagedParkingBoy(IParkable parkingBoy) {
-        parkingBoyes.add(parkingBoy);
+    protected ParkingManager(IParkable parkingLot, IParkable... parkables) {
+        super(parkingLot, parkables);
     }
 
     public Ticket park(Car car) {
-        Ticket ticket = super.park(car);
-        if (!ticket.isAvailable()) {
-            for (IParkable parkingBoy : parkingBoyes) {
-                ticket = parkingBoy.park(car);
-                if (ticket.isAvailable()) {
-                    break;
-                }
+        for (IParkable parkable : getParkables()) {
+            Ticket ticket = parkable.park(car);
+            if (ticket.isAvailable()) {
+                return ticket;
             }
         }
-        return ticket;
+        return new NullTicket();
     }
+
 }

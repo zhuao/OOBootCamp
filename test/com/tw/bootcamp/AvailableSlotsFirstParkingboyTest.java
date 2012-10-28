@@ -1,5 +1,7 @@
 package com.tw.bootcamp;
 
+import com.tw.bootcamp.domain.Car;
+import com.tw.bootcamp.domain.Ticket;
 import junit.framework.Assert;
 import org.junit.Test;
 

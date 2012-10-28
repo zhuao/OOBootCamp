@@ -1,6 +1,6 @@
-package com.tw.bootcamp;
+package com.tw.bootcamp.domain;
 
-public class NullTicket extends Ticket{
+public class NullTicket extends Ticket {
 
     @Override
     public boolean isAvailable() {
