@@ -65,25 +65,4 @@ public class ParkingManagerTest {
 
     }
 
-    @Test
-    public void should_print_all_parking_lots_when_it_has_2_parking_boy() {
-
-        ParkingLot parkingLot = new ParkingLot(10, 1);
-        ParkingLot firstParkingLot = new ParkingLot(20,1);
-        ParkingBoy parkingBoy = ParkingBoy.createCommonParkingBoy(firstParkingLot);
-        parkingBoy.setName("lisi");
-        ParkingLot secondParkingLot = new ParkingLot(20,1);
-        ParkingBoy secondParkingBoy = ParkingBoy.createCommonParkingBoy(secondParkingLot);
-        secondParkingBoy.setName("wangwu");
-
-        ParkingManager parkingManager = ParkingBoy.createParkingManager(parkingLot, parkingBoy, secondParkingBoy);
-        parkingManager.setName("zhangsan");
-
-
-        String tree = parkingManager.report(0);
-
-        System.out.println(tree);
-        Assert.assertEquals("ParkingManager:zhangsan\n  ParkingLot:1\n  CommonParkingBoy:lisi\n    ParkingLot:1\n  CommonParkingBoy:wangwu\n    ParkingLot:1\n", tree);
-
-    }
 }

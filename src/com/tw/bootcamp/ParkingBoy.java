@@ -3,7 +3,7 @@ package com.tw.bootcamp;
 import com.tw.bootcamp.domain.Car;
 import com.tw.bootcamp.domain.NullTicket;
 import com.tw.bootcamp.domain.Ticket;
-import com.tw.bootcamp.parkingstrategy.IParkingStrategy;
+import com.tw.bootcamp.printer.Printer;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -12,7 +12,6 @@ import java.util.List;
 public class ParkingBoy implements IParkable {
 
     private List<IParkable> parkables;
-    private IParkingStrategy parkingStrategy;
     private String name;
 
     private ParkingBoyType parkingBoyType;
@@ -49,11 +48,6 @@ public class ParkingBoy implements IParkable {
 
     protected void setParkingBoyType(ParkingBoyType parkingBoyType) {
         this.parkingBoyType = parkingBoyType;
-        setParkingStrategy(parkingBoyType.getParkingStrategy());
-    }
-
-    private void setParkingStrategy(IParkingStrategy parkingStrategy) {
-        this.parkingStrategy = parkingStrategy;
     }
 
     @Override
@@ -61,7 +55,7 @@ public class ParkingBoy implements IParkable {
         Ticket ticket;
 
         try{
-            ticket = this.parkingStrategy.getAvailableParkingLot(getParkingLot(parkables)).park(car);
+            ticket = parkingBoyType.getParkingStrategy().getAvailableParkingLot(getParkingLot(parkables)).park(car);
 
         }catch (RuntimeException e) {
 //            e.printStackTrace();
@@ -70,14 +64,10 @@ public class ParkingBoy implements IParkable {
         return ticket;
     }
 
+
     @Override
-    public String report(int indentLength) {
-        StringBuilder strBuilder = new StringBuilder();
-        strBuilder.append(buildWhiteSpace(indentLength)).append(this.parkingBoyType.getReportName()).append(":").append(getName()).append("\n");
-        for (IParkable parkingLot : parkables) {
-            strBuilder.append(parkingLot.report(indentLength + 2));
-        }
-        return strBuilder.toString();
+    public String print(Printer printer) {
+        return printer.printParkingBoy(this);
     }
 
     public String getName() {
@@ -88,7 +78,7 @@ public class ParkingBoy implements IParkable {
         this.name = name;
     }
 
-    protected List<IParkable> getParkables() {
+    public List<IParkable> getParkables() {
         return this.parkables;
     }
 
@@ -102,12 +92,7 @@ public class ParkingBoy implements IParkable {
         return parkingLots;
     }
 
-    private String buildWhiteSpace(int indentLength) {
-        String whiteSpace = "";
-        while (indentLength -- > 0) {
-            whiteSpace += " ";
-        }
-        return whiteSpace;
+    public ParkingBoyType getParkingBoyType() {
+        return parkingBoyType;
     }
-
 }

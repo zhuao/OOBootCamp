@@ -3,6 +3,7 @@ package com.tw.bootcamp;
 import com.tw.bootcamp.domain.Car;
 import com.tw.bootcamp.domain.NullTicket;
 import com.tw.bootcamp.domain.Ticket;
+import com.tw.bootcamp.printer.Printer;
 
 public class ParkingManager extends ParkingBoy {
 
