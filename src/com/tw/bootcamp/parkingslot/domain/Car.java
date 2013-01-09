@@ -1,4 +1,4 @@
-package com.tw.bootcamp.domain;
+package com.tw.bootcamp.parkingslot.domain;
 
 public class Car {
 

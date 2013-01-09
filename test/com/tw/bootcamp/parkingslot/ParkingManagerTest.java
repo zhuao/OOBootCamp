@@ -1,7 +1,11 @@
-package com.tw.bootcamp;
+package com.tw.bootcamp.parkingslot;
 
-import com.tw.bootcamp.domain.Car;
-import com.tw.bootcamp.domain.Ticket;
+import com.tw.bootcamp.parkingslot.domain.Car;
+import com.tw.bootcamp.parkingslot.domain.Ticket;
+import com.tw.bootcamp.parkingslot.IParkable;
+import com.tw.bootcamp.parkingslot.ParkingBoy;
+import com.tw.bootcamp.parkingslot.ParkingLot;
+import com.tw.bootcamp.parkingslot.ParkingManager;
 import junit.framework.Assert;
 import org.junit.Test;
 

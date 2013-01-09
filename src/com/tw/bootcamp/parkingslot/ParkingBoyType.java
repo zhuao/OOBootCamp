@@ -1,9 +1,9 @@
-package com.tw.bootcamp;
+package com.tw.bootcamp.parkingslot;
 
-import com.tw.bootcamp.parkingstrategy.AvailableSlotParkingStrategy;
-import com.tw.bootcamp.parkingstrategy.IParkingStrategy;
-import com.tw.bootcamp.parkingstrategy.ParkingStrategy;
-import com.tw.bootcamp.parkingstrategy.VacancyRateFirstParkingStrategy;
+import com.tw.bootcamp.parkingslot.parkingstrategy.AvailableSlotParkingStrategy;
+import com.tw.bootcamp.parkingslot.parkingstrategy.IParkingStrategy;
+import com.tw.bootcamp.parkingslot.parkingstrategy.ParkingStrategy;
+import com.tw.bootcamp.parkingslot.parkingstrategy.VacancyRateFirstParkingStrategy;
 
 public enum ParkingBoyType {
     COMMON("CommonParkingBoy", new ParkingStrategy()),

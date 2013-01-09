@@ -1,9 +1,9 @@
-package com.tw.bootcamp.printer;
+package com.tw.bootcamp.parkingslot.printer;
 
-import com.tw.bootcamp.IParkable;
-import com.tw.bootcamp.ParkingBoy;
-import com.tw.bootcamp.ParkingLot;
-import com.tw.bootcamp.ParkingManager;
+import com.tw.bootcamp.parkingslot.IParkable;
+import com.tw.bootcamp.parkingslot.ParkingBoy;
+import com.tw.bootcamp.parkingslot.ParkingLot;
+import com.tw.bootcamp.parkingslot.ParkingManager;
 
 public class ConsolePrinter implements Printer {
 

@@ -1,9 +1,8 @@
-package com.tw.bootcamp;
+package com.tw.bootcamp.parkingslot;
 
-import com.tw.bootcamp.domain.Car;
-import com.tw.bootcamp.domain.NullTicket;
-import com.tw.bootcamp.domain.Ticket;
-import com.tw.bootcamp.printer.Printer;
+import com.tw.bootcamp.parkingslot.domain.Car;
+import com.tw.bootcamp.parkingslot.domain.NullTicket;
+import com.tw.bootcamp.parkingslot.domain.Ticket;
 
 public class ParkingManager extends ParkingBoy {
 

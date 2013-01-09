@@ -1,6 +1,9 @@
-package com.tw.bootcamp;
+package com.tw.bootcamp.parkingslot;
 
-import com.tw.bootcamp.printer.ConsolePrinter;
+import com.tw.bootcamp.parkingslot.ParkingBoy;
+import com.tw.bootcamp.parkingslot.ParkingLot;
+import com.tw.bootcamp.parkingslot.ParkingManager;
+import com.tw.bootcamp.parkingslot.printer.ConsolePrinter;
 import junit.framework.Assert;
 import org.junit.Test;
 
