@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dab8ee5d-48bd-41df-881c-5a060f4463be" name="Default" comment="[zhuao] move parking lot">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/composition/ArithmeticExpression.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/composition/Arithmometer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/tw/bootcamp/composition/ArithmometerTestCase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/feature/BaseGood.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/SaleTaxStrategy/BaseGoodFeature.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/SaleTaxStrategy/BaseSaleTax.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/bridge/domain/Book.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/bridge/CacheDataSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/bridge/domain/Document.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/composition/ExpressionBuild.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/Good.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/feature/GoodFeature.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/SaleTaxStrategy/ImportedSaleTax.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/composition/Minus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/composition/Multiply.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/composition/Plus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/Receipt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/tw/bootcamp/saletax/ReceiptTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/SaleTaxStrategy/SaleTaxStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/composition/Value.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/requirement.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/bootcamp/bridge/Controller.java" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/bridge/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/bootcamp/bridge/ControllerTest.java" afterPath="$PROJECT_DIR$/test/com/tw/bootcamp/bridge/ControllerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/bootcamp/bridge/domain/Paper.java" afterPath="$PROJECT_DIR$/src/com/tw/bootcamp/bridge/domain/Paper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/design pattern.md" afterPath="$PROJECT_DIR$/doc/design pattern.md" />
+    </list>
+    <ignored path="OOBootCamp.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366854194385" ignored="false" />
+    <file path="/ReceiptTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366899757794" ignored="false" />
+    <file path="/fragment.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366900264542" ignored="false" />
+    <file path="/Good.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366907755753" ignored="false" />
+    <file path="/Receipt.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366908463013" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/gen/com/telstra/mobile/android/mytelstra/R.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366886176290" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/UsageDetailsPostpaidBigpondActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995727" ignored="false" />
+    <file path="/SaleTaxStrategy.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365345109238" ignored="false" />
+    <file path="/ImportedSaleTax.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365344887871" ignored="false" />
+    <file path="/BaseSaleTax.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365344976441" ignored="false" />
+    <file path="/GoodFeature.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365347142655" ignored="false" />
+    <file path="/BaseGood.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365347388917" ignored="false" />
+    <file path="/BaseGoodFeature.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365347240054" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/views/UsageSettingItemsTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="/UsageSettingItemsTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366857720270" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/views/UsageSettingItems.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995726" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/Telstra24x7TestRunner.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365389419884" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/Telstra24x7Application.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995724" ignored="false" />
+    <file path="/UsageSettingItems.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366857579910" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/res/values/strings.xml" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366886186271" ignored="false" />
+    <file path="/strings.xml" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365396770511" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/rechargehistory/RechargeHistoryActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995726" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/builders/ServiceProvider.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365413543826" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/HttpUtils.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365412257902" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/RechargeTypesActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365417977328" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/domain/service/ServiceWrapperTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365417977328" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/PremiumSMSActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366885534238" ignored="false" />
+    <file path="/ServiceProvider.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365413536633" ignored="false" />
+    <file path="/ServiceWrapperTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365413369283" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/build.xml" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="/build.xml" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365419137233" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/project.properties" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/src/main/java/com/thoughtworks/ieat/utils/HttpUtils.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/bin/AndroidManifest.xml" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365419897979" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/res/layout/order_create.xml" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042531" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/src/main/java/com/thoughtworks/ieat/activity/GroupListActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/src/main/java/com/thoughtworks/ieat/activity/ActionBarActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/src/main/java/com/thoughtworks/ieat/activity/OrderCreateActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/src/main/java/com/thoughtworks/ieat/activity/GroupTabActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/src/main/java/com/thoughtworks/ieat/view/DishChoosingView.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/src/main/java/com/thoughtworks/ieat/activity/GroupCreateActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/src/main/java/com/thoughtworks/ieat/activity/GroupInfoActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/res/layout/dish_choosing.xml" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/src/main/java/com/thoughtworks/ieat/view/DishesAdapter.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/AndroidManifest.xml" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="$PROJECT_DIR$/../iEat/Android/iEatAndroid/res/raw/app_config.properties" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1365436042532" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/omniture/OmnitureConstants.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366886609007" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/ServiceInternationalRoamingStatusActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="/ServiceInternationalRoamingStatusActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366859111982" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/ServiceInternationalRoamingStatusActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="/ServiceInternationalRoamingStatusActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366859420732" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/ManagingCallsActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="/ManagingCallsActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366875914119" ignored="false" />
+    <file path="/OmnitureConstants.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366874616910" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/ManagingCallsActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="/ManagingCallsActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366875546784" ignored="false" />
+    <file path="/PremiumSMSActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366885463072" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/PremiumSMSActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366885329504" ignored="false" />
+    <file path="/PremiumSMSActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366885323758" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/builders/ServiceBuilder.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995724" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/res/values/styles.xml" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995724" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/VipCustomerSplashActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995724" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/SettingsActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995724" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/SettingsConfirmPinScreenActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995724" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/PurchaseDataPacksViaTopUpsActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366887027096" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/ChangeYourOfferActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/base/ServiceTitleActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/VipCustomerContactActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/SplashActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/UsageDetailsBaseActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/BuyTopUpOptionsActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/UsageDetailsPostpaidBaseActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/UsageDetailsPostpaidBigpondActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/PayByPaypalActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/UsageDetailsPostpaidHomephoneActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/UsageDetailsPostpaidMobileActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/PayByPaypalActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/UsageDetailsPostpaidSharedDataActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/domain/customersupport/Link.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/CallingOverseasTopUpActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/UsageDetailsPostpaidMobileActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995725" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/BuyTopUpOptionsActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995726" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/PurchaseDataPacksViaTopUpsActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366886398736" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/domain/profile/ServiceProfile.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995726" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/domain/service/Service.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995726" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/datapacks/DataPacksActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995726" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/UsagePrepaidHistoryActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995726" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/activities/DashboardActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995726" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/DashboardActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995727" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/DataSettingsActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995727" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/DataSettingsThemedActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995727" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/shareddata/SharedDataActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995727" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/AndroidManifest.xml" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995727" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/MyAccountLoginActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995727" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/UnitTest/src/com/telstra/mobile/android/mytelstra/utils/DisplayUtilsTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995727" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/UsagePrepaidHistoryActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995727" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/VipCustomerSplashActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995727" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/PaymentOptionsActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995727" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/PlusPacksBrowseActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995730" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/datapacks/DataPacksUrlHelper.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995730" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/views/SectionViewWithButton.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995730" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/RecentActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995730" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/RechargeAmountActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995730" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/RechargeByVoucherActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995732" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/utils/ServiceUtils.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995732" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/activities/RechargePINActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995732" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/src/com/telstra/mobile/android/mytelstra/MyTelstraConstants.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366884995732" ignored="false" />
+    <file path="$USER_HOME$/repository/Telstra/TelstraAndroid/Telstra24x7/gen/com/telstra/mobile/android/mytelstra/BuildConfig.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366886176290" ignored="false" />
+    <file path="/PurchaseDataPacksViaTopUpsActivity.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366886398736" ignored="false" />
+    <file path="/PurchaseDataPacksViaTopUpsActivityTest.java" changelist="dab8ee5d-48bd-41df-881c-5a060f4463be" time="1366886853455" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/tw/bootcamp/composition/ExpressionBuild.java" line="26" class="com.tw.bootcamp.composition.ExpressionBuild" package="com.tw.bootcamp.composition">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/tw/bootcamp/composition/ExpressionBuild.java" line="24" class="com.tw.bootcamp.composition.ExpressionBuild" package="com.tw.bootcamp.composition">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/tw/bootcamp/saletax/Receipt.java" line="65" class="com.tw.bootcamp.saletax.Receipt" package="com.tw.bootcamp.saletax">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="OOBootCamp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ReceiptTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/tw/bootcamp/saletax/ReceiptTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="75" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.45762712">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Receipt.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/saletax/Receipt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="30" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BigDecimal.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/openjdk-6-src-b27-26_oct_2012/jdk/src/share/classes/java/math/BigDecimal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1038" column="29" selection-start="43202" selection-end="43202" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Good.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/saletax/Good.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirement.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/saletax/requirement.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="33" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/test/com/tw/bootcamp/composition/ArithmometerTestCase.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/composition/Multiply.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/composition/ExpressionBuild.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/composition/Minus.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/SaleTaxStrategy/ImportedSaleTax.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/SaleTaxStrategy/BaseSaleTax.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/SaleTaxStrategy/SaleTaxStrategy.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/GoodFeature.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/SaleTaxStrategy/BaseGood.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/feature/GoodFeature.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/SaleTaxStrategy/BaseGoodFeature.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/feature/BaseGood.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/requirement.txt" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/Good.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/bootcamp/saletax/Receipt.java" />
+        <option value="$PROJECT_DIR$/test/com/tw/bootcamp/saletax/ReceiptTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="774" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saletax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saletax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parkingslot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOBootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/tw/bootcamp/composition" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="editing.templates" />
+    <property name="last_opened_file_path" value="$USER_HOME$/repository/Telstra/TelstraAndroid" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.tw.bootcamp.bridge" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.tw.bootcamp" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="com.tw.bootcamp.ParkingBoy" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tw.bootcamp.saletax" />
+      <recent name="com.tw.bootcamp.composition" />
+      <recent name="com.tw.bootcamp.bridge.domain" />
+      <recent name="com.tw.bootcamp" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tw.bootcamp.saletax.feature" />
+      <recent name="com.tw.bootcamp.composition" />
+      <recent name="com.tw.bootcamp" />
+      <recent name="com.tw.bootcamp.bridge" />
+      <recent name="com.tw.bootcamp.parkingslot" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ReceiptTest.should_print_good_list_with_good_name_quantity_and_price_when_there_are_two_goods_with_imported_tax_rate">
+    <configuration default="false" name="ReceiptTest.should_print_good_list_with_good_name_and_price" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="OOBootCamp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.bootcamp.saletax" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.bootcamp.saletax.ReceiptTest" />
+      <option name="METHOD_NAME" value="should_print_good_list_with_good_name_and_price" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReceiptTest.should_print_good_list_with_good_name_quantity_and_price_when_there_is_a_good" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="OOBootCamp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.bootcamp.saletax" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.bootcamp.saletax.ReceiptTest" />
+      <option name="METHOD_NAME" value="should_print_good_list_with_good_name_quantity_and_price_when_there_is_a_good" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReceiptTest.should_print_good_list_with_good_name_quantity_and_price_when_there_are_two_goods_with_imported_tax_rate" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="OOBootCamp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.bootcamp.saletax" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.bootcamp.saletax.ReceiptTest" />
+      <option name="METHOD_NAME" value="should_print_good_list_with_good_name_quantity_and_price_when_there_are_two_goods_with_imported_tax_rate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReceiptTest.should_print_good_list_with_good_name_quantity_and_price_when_there_are_three_goods_with_imported_tax_rate_and_basic_tax_rate" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="OOBootCamp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.bootcamp.saletax" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.bootcamp.saletax.ReceiptTest" />
+      <option name="METHOD_NAME" value="should_print_good_list_with_good_name_quantity_and_price_when_there_are_three_goods_with_imported_tax_rate_and_basic_tax_rate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReceiptTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="OOBootCamp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.bootcamp.saletax" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.bootcamp.saletax.ReceiptTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ReceiptTest.should_print_good_list_with_good_name_and_price" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ReceiptTest.should_print_good_list_with_good_name_quantity_and_price_when_there_is_a_good" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ReceiptTest.should_print_good_list_with_good_name_quantity_and_price_when_there_are_two_goods_with_imported_tax_rate" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ReceiptTest.should_print_good_list_with_good_name_quantity_and_price_when_there_are_three_goods_with_imported_tax_rate_and_basic_tax_rate" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ReceiptTest" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ReceiptTest.should_print_good_list_with_good_name_quantity_and_price_when_there_are_two_goods_with_imported_tax_rate" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ReceiptTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ReceiptTest.should_print_good_list_with_good_name_quantity_and_price_when_there_are_three_goods_with_imported_tax_rate_and_basic_tax_rate" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ReceiptTest.should_print_good_list_with_good_name_quantity_and_price_when_there_is_a_good" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ReceiptTest.should_print_good_list_with_good_name_and_price" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dab8ee5d-48bd-41df-881c-5a060f4463be" name="Default" comment="" />
+      <created>1350533019439</created>
+      <updated>1350533019439</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961932" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12730062" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32618684" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17504051" sideWeight="0.5153374" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48466256" sideWeight="0.97545356" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961932" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277623" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.107905984" sideWeight="0.6722377" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/composition/ExpressionBuild.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="16" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/composition/Arithmometer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="59" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/composition/ArithmeticExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="31" selection-start="130" selection-end="139" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/saletax/SaleTaxStrategy/SaleTaxStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/saletax/SaleTaxStrategy/ImportedSaleTax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="49" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/saletax/SaleTaxStrategy/BaseSaleTax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="42" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/saletax/feature/GoodFeature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="24" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/saletax/SaleTaxStrategy/BaseGoodFeature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="32" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/saletax/feature/BaseGood.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="40" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/note.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/openjdk-6-src-b27-26_oct_2012/jdk/src/share/classes/java/math/MathContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="19" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.040983606">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/saletax/Receipt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="30" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/openjdk-6-src-b27-26_oct_2012/jdk/src/share/classes/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1038" column="29" selection-start="43202" selection-end="43202" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/saletax/Good.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/bootcamp/saletax/requirement.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="33" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tw/bootcamp/saletax/ReceiptTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="75" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.45762712">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>googlemap15</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>OOBootCamp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

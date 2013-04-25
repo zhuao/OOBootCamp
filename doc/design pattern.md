@@ -37,13 +37,15 @@ This design patterns is all about Class and Object composition. Structural class
 	Separates an object’s interface from its implementation
 1. Composite
 
-	A tree structure of simple and composite objects
+	A tree structure of simple and composite objects.
+	* recrusive composition
+	* Directory contains entries, each of which would would be a directory.
 1. Decorator
 
 	Add responsibilities to objects dynamically
 1. Facade
 	
-	A single class that represents an entire subsystem
+	Provide a unified interface to a set of interfaces in a subsystem.
 1. Flyweight
 
 	A fine-grained instance used for efficient sharing
