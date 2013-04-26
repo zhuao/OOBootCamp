@@ -25,66 +25,43 @@ public class Receipt {
                     .append(" ")
                     .append(good.getName())
                     .append(": ")
-                    .append(roundUp(calculateSaleTax(good)).add(good.getQuote()))
+                    .append(calculateSaleTax(good).roundUp().add(good.getQuote()))
                     .append("\n");
         }
 
-        stringBuilder.append("Sales Taxes: ").append(roundUp(calculateSaleTax())).append("\n");
-        stringBuilder.append("Total: ").append(getQuota().add(roundUp(calculateSaleTax())));
+        stringBuilder.append("Sales Taxes: ").append(calculateSaleTax().roundUp()).append("\n");
+        stringBuilder.append("Total: ").append(getQuota().add(calculateSaleTax().roundUp()));
         return stringBuilder.toString();
     }
 
-    private BigDecimal roundUp(BigDecimal bigDecimal) {
-        BigDecimal multiply = bigDecimal.multiply(BigDecimal.valueOf(100));
-        int param = multiply.intValue();
-        int lastNumber = param % 10;
-        int divideNumber = param / 10;
-        if (lastNumber > 5) {
-            lastNumber = 10;
-        } else if (lastNumber > 0) {
-            lastNumber = 5;
-        }
-        return BigDecimal.valueOf((divideNumber * 10 + lastNumber)).divide(BigDecimal.valueOf(100));
-    }
 
-    private BigDecimal calculateSaleTax(Good good) {
-        BigDecimal tax = new BigDecimal(0);
+    private Price calculateSaleTax(Good good) {
+        Price tax = new Price(0);
 
         if (good.getName().contains("imported")) {
-            tax = tax.add(good.getQuote().multiply(new BigDecimal(0.05)));
+            tax = tax.add(good.getQuote().multiply(0.05));
         }
 
         if (!good.getName().contains("book") && !good.getName().contains("chocolate") && !good.getName().contains("headache")) {
-            tax = tax.add(good.getQuote().multiply(new BigDecimal(0.1)));
+            tax = tax.add(good.getQuote().multiply(0.1));
         }
         return tax;
     }
 
-    private BigDecimal getQuota() {
-        BigDecimal count = new BigDecimal(0);
+    private Price getQuota() {
+        Price count = new Price(0);
         for (Good good : goods) {
             count = count.add(good.getQuote());
         }
         return count;
     }
 
-    private BigDecimal calculateSaleTax() {
-        BigDecimal saleTax = new BigDecimal(0);
+    private Price calculateSaleTax() {
+        Price saleTax = new Price(0);
         for (Good good : goods) {
             saleTax = saleTax.add(calculateSaleTax(good));
         }
         return saleTax;
     }
 
-    private float roundUp(float result) {
-        int param = ((Float) (result * 100)).intValue();
-        int lastNumber = param % 10;
-        int divideNumber = param / 10;
-        if (lastNumber > 5) {
-            lastNumber = 10;
-        } else if (lastNumber > 0) {
-            lastNumber = 5;
-        }
-        return (divideNumber * 10 + lastNumber) / 100f;
-    }
 }

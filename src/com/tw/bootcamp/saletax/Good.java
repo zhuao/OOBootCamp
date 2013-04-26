@@ -4,12 +4,12 @@ import java.math.BigDecimal;
 
 public class Good {
     private final String name;
-    private final BigDecimal price;
+    private final Price price;
     private final int quantity;
 
     public Good(String name, BigDecimal price, int quantity) {
         this.name = name;
-        this.price = price;
+        this.price = new Price(price);
         this.quantity = quantity;
     }
 
@@ -17,15 +17,15 @@ public class Good {
         return name;
     }
 
-    public BigDecimal getPrice() {
-        return price;
+    public Price getPrice() {
+        return new Price(price);
     }
 
     public int getQuantity() {
         return quantity;
     }
 
-    public BigDecimal getQuote() {
-        return price.multiply(new BigDecimal(quantity)) ;
+    public Price getQuote() {
+        return new Price(price).multiply(quantity);
     }
 }
