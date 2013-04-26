@@ -1,24 +1,26 @@
 package com.tw.bootcamp.saletax;
 
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
 
-public class Price {
+public class CalculatedNumber {
+    private static DecimalFormat decimalFormat = new DecimalFormat("0.00");
 
     private BigDecimal price;
 
-    public Price(BigDecimal price) {
+    public CalculatedNumber(BigDecimal price) {
         this.price = price;
     }
 
-    public Price(int i) {
-        price = BigDecimal.valueOf(i);
+    public CalculatedNumber() {
+        this.price = BigDecimal.valueOf(0);
     }
 
-    public Price(Price price) {
+    public CalculatedNumber(CalculatedNumber price) {
         this.price = price.getNumber();
     }
 
-    public Price roundUp() {
+    public CalculatedNumber roundUp() {
         int param = price.multiply(BigDecimal.valueOf(100)).intValue();
         int lastNumber = param % 10;
         int divideNumber = param / 10;
@@ -31,24 +33,19 @@ public class Price {
         return this;
     }
 
-    public Price multiply(int bigDecimal) {
-        price = price.multiply(BigDecimal.valueOf(bigDecimal));
-        return this;
-    }
-
-    public Price multiply(double v) {
+    public CalculatedNumber multiply(double v) {
         price = price.multiply(BigDecimal.valueOf(v));
         return this;
     }
 
-    public Price add(Price addNumber) {
+    public CalculatedNumber add(CalculatedNumber addNumber) {
         price = price.add(addNumber.getNumber());
         return this;
     }
 
     @Override
     public String toString() {
-        return price.toString();
+        return decimalFormat.format(price);
     }
 
     private BigDecimal getNumber() {

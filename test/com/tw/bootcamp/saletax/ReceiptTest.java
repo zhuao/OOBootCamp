@@ -23,8 +23,7 @@ public class ReceiptTest {
         assertThat(receipt.print(), is("1 book: 12.49\n" +
                 "1 music CD: 16.49\n" +
                 "1 chocolate bar: 0.85\n" +
-                "Sales Taxes: 1.5\n" +
-//                "Sales Taxes: 1.50\n" +
+                "Sales Taxes: 1.50\n" +
                 "Total: 29.83"));
     }
 
@@ -48,7 +47,7 @@ public class ReceiptTest {
                 "1 bottle of perfume: 20.89\n" +
                 "1 packet of headache pills: 9.75\n" +
                 "1 box of imported chocolates: 11.85\n" +
-                "Sales Taxes: 6.7\n" +
+                "Sales Taxes: 6.70\n" +
                 "Total: 74.68"));
     }
 }

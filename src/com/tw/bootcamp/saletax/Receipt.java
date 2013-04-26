@@ -1,6 +1,5 @@
 package com.tw.bootcamp.saletax;
 
-import javax.xml.crypto.dsig.dom.DOMValidateContext;
 import java.math.BigDecimal;
 import java.util.LinkedList;
 import java.util.List;
@@ -10,6 +9,7 @@ public class Receipt {
 
     public void addGood(String input) {
         String[] goodInfo = input.split(" ");
+
         String goodName = goodInfo[1];
         for (int index = 2; index < goodInfo.length - 2; index++) {
             goodName += " " + goodInfo[index];
@@ -30,34 +30,33 @@ public class Receipt {
         }
 
         stringBuilder.append("Sales Taxes: ").append(calculateSaleTax().roundUp()).append("\n");
-        stringBuilder.append("Total: ").append(getQuota().add(calculateSaleTax().roundUp()));
+        stringBuilder.append("Total: ").append(calculateSaleTax().roundUp().add(getQuota()));
         return stringBuilder.toString();
     }
 
-
-    private Price calculateSaleTax(Good good) {
-        Price tax = new Price(0);
+    private CalculatedNumber calculateSaleTax(Good good) {
+        CalculatedNumber tax = new CalculatedNumber();
 
         if (good.getName().contains("imported")) {
-            tax = tax.add(good.getQuote().multiply(0.05));
+            tax.add(good.getQuote().multiply(0.05));
         }
 
         if (!good.getName().contains("book") && !good.getName().contains("chocolate") && !good.getName().contains("headache")) {
-            tax = tax.add(good.getQuote().multiply(0.1));
+            tax.add(good.getQuote().multiply(0.1));
         }
         return tax;
     }
 
-    private Price getQuota() {
-        Price count = new Price(0);
+    private CalculatedNumber getQuota() {
+        CalculatedNumber count = new CalculatedNumber();
         for (Good good : goods) {
-            count = count.add(good.getQuote());
+            count.add(good.getQuote());
         }
         return count;
     }
 
-    private Price calculateSaleTax() {
-        Price saleTax = new Price(0);
+    private CalculatedNumber calculateSaleTax() {
+        CalculatedNumber saleTax = new CalculatedNumber();
         for (Good good : goods) {
             saleTax = saleTax.add(calculateSaleTax(good));
         }
