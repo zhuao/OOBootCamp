@@ -21,3 +21,6 @@ INPUT 3:
 Rewards: 26Mar2009(thur), 27Mar2009(fri), 28Mar2009(sat)
 OUTPUT 3:
 Ridgewood
+
+Part II
+Each hotel picks black-out dates for rewards customers. Black-out dates are when rewards customer cannot avail the discounted rates, they will be charged regular rates. For example, Bridgewood has picked its black out dates for New Years from 23rd December to 2nd January. Ridgewood has  all the entire three months of July, August, September as black-out dates for summer.
