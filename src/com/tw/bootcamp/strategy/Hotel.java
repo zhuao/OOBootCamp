@@ -6,10 +6,7 @@ import java.util.Date;
 public class Hotel {
 
     private double pricePerDay;
-    private int days;
     private double discountForVIP;
-    private boolean isBusy;
-    private boolean isVip;
 
     public Hotel(double pricePerDay, double discountForVIP) {
         this.pricePerDay = pricePerDay;
@@ -17,30 +14,19 @@ public class Hotel {
     }
 
 
-    public double calculate() {
-        if (isBusy()) {
+    public double fee(boolean isVip, Date[] checkInDates) {
+        int days = checkInDates.length;
+        boolean isBusy = getWeekendDays(checkInDates) > 0;
+
+        if (isBusy) {
             return pricePerDay * days;
         } else {
-            if (isVip()) {
+            if (isVip) {
                 return pricePerDay * days * discountForVIP;
             } else {
                 return (pricePerDay * days) - Double.valueOf(pricePerDay * days).intValue()/100 * 10;
             }
         }
-    }
-
-    public void checkin(boolean isVip, Date... checkinDays) {
-        days = checkinDays.length;
-        isBusy = getWeekendDays(checkinDays) > 0;
-        this.isVip = isVip;
-    }
-
-    private boolean isVip() {
-        return isVip;
-    }
-
-    private boolean isBusy() {
-        return isBusy;
     }
 
     private int getWeekendDays(Date... checkinDays) {
