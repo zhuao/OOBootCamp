@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="OOBootCamp" basedir="./">
 
-    <property name="java_encoding" value="UTF-8"/>
+    <property name="java_encoding" absoluteValue="UTF-8"/>
     <property environment="env"/>
     <property file="project.properties"/>
 

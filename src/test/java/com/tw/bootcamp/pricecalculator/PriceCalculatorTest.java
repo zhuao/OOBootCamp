@@ -1,7 +1,6 @@
 package com.tw.bootcamp.pricecalculator;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -42,7 +41,33 @@ public class PriceCalculatorTest {
     }
 
     @Test
-    public void should_get_right_price_when_purchase_multiple_product() {
+    public void should_get_right_price_when_purchase_two_product() {
         assertThat(calculator.calculate("AB"), is(80f));
     }
+
+    @Test
+    public void should_get_right_price_when_purchase_multiple_product_and_are_same_product() {
+        assertThat(calculator.calculate("AA"), is(100f));
+    }
+
+    @Test
+    public void should_get_right_price_when_purchase_three_product() {
+        assertThat(calculator.calculate("AAB"), is(130f));
+    }
+
+    @Test
+    public void should_get_right_price_when_purchase_triple_A_product() {
+        assertThat(calculator.calculate("AAA"), is(130f));
+    }
+
+    @Test
+    public void should_get_right_price_when_purchase_triple_A_and_B_product() {
+        assertThat(calculator.calculate("BABABA"), is(210f));
+    }
+
+    @Test
+    public void should_get_right_price_when_purchase_double_B_product() {
+        assertThat(calculator.calculate("BB"), is(50f));
+    }
+
 }

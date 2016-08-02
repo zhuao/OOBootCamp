@@ -16,7 +16,21 @@ public class PriceCalculator {
         for (String product : productList) {
             priceAmount += findProductPrice(String.valueOf(product));
         }
-        return priceAmount;
+
+        int productACount = countProduct(productList, "A");
+        int productBCount = countProduct(productList, "B");
+
+        return priceAmount - 20 * (productACount / 3) - 10 * (productBCount /2);
+    }
+
+    private int countProduct(String[] productList, String product) {
+        int count = 0;
+        for (String productItem : productList) {
+            if (productItem.equals(product)) {
+                count++;
+            }
+        }
+        return count;
     }
 
     private float findProductPrice(String product) {
@@ -27,4 +41,6 @@ public class PriceCalculator {
     private String[] toProductList(String shoppingList) {
         return shoppingList.split("");
     }
+
+
 }
