@@ -1,4 +1,4 @@
-package com.tw.bootcamp.guesslength;
+package com.tw.bootcamp.lengthcompare;
 
 import org.junit.Test;
 
@@ -20,11 +20,6 @@ public class LengthTest {
     @Test
     public void should_not_be_equal_when_two_length_are_same_value_and_unit() {
         assertNotEquals(new Length(2, LengthUnit.CM), new Length(2, LengthUnit.M));
-    }
-
-    @Test
-    public void should_be_equal_when_two_length_are_same_value_and_both_unit_is_M() {
-        assertEquals(new Length(2, LengthUnit.M), new Length(2, LengthUnit.M));
     }
 
     @Test

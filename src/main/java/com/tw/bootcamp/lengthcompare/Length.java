@@ -1,4 +1,4 @@
-package com.tw.bootcamp.guesslength;
+package com.tw.bootcamp.lengthcompare;
 
 public class Length {
     private int length;
@@ -11,6 +11,10 @@ public class Length {
 
     @Override
     public boolean equals(Object obj) {
-        return ((Length) obj).unit.absoluteValue(((Length) obj).length) == unit.absoluteValue(length);
+        return ((Length) obj).getAtomValue() == getAtomValue();
+    }
+
+    private int getAtomValue() {
+        return length * unit.value();
     }
 }
